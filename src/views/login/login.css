@@ -1,0 +1,13 @@
+body {
+    /*background-color: rgba(11, 52, 95, 0.9) !important;*/
+}
+.ant-form.login-form {
+    max-width: 300px;
+    margin: 10vh auto;
+}
+.login-form-forgot {
+    float: right;
+}
+.login-form-button {
+    width: 100%;
+}
