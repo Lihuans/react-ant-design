@@ -1,6 +1,8 @@
 import React from 'react'
 import { Table, Divider, Modal, Button } from 'antd';
 
+import { Link }     from 'react-router-dom';
+
 const { confirm } = Modal;
 
 export default class Options1 extends React.Component{
@@ -53,7 +55,7 @@ export default class Options1 extends React.Component{
                 title: '住址',
                 dataIndex: 'address',
                 key: 'address',
-                render: (text) => <a href="">{text}</a>
+                render: (text) => <a href="/options/detail">{text}</a>
             },
             {
                 title: '编辑',
@@ -62,7 +64,7 @@ export default class Options1 extends React.Component{
                 render: (text, record) => {
                     return (
                         <span>
-                            <a>Invite {record.name}</a>
+                            <Link to={`/options/detail/${record.key}`}>Invite {record.name}</Link>
                             <Divider type="vertical" />
                             <a onClick={e => this.delDialog(e)}>Delete {text}</a>
                         </span>

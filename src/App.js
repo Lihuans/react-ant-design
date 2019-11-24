@@ -5,6 +5,7 @@ import WrappedNormalLoginForm from './views/login/login'
 // import Options1 from "./views/subnav1/options1";
 
 import options1 from "./views/subnav1/options1";
+import options1Detail from "./views/subnav1/detail/detail";
 import options2 from "./views/subnav1/options2";
 
 import { BrowserRouter as Router, Switch, Redirect, Route, Link } from 'react-router-dom'
@@ -26,6 +27,7 @@ class App extends React.Component{
             <Switch>
               <Route exact path="/" component={options1}/>
               <Route path="/options2" component={ options2 } />
+              <Route path="/options/detail/:id" component={ options1Detail } />
               {/*<Route path="/product" component={ProductRouter}/>*/}
               {/*<Route path="/product-category" component={ProductRouter}/>*/}
               {/*<Route path="/order/index" component={OrderList}/>*/}
