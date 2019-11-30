@@ -1,4 +1,7 @@
 import React from 'react';
+
+import './assets/css/base.css'
+
 import Index from './views/index'
 import Layout from './components/layout/index'
 import WrappedNormalLoginForm from './views/login/login'
